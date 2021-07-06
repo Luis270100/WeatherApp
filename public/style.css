@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+
+
+body {
+    background-color: #0091AD;
+    margin: 0;
+}
+
+
+
+#container{
+    width: 100%;
+}
+
+
+#title {
+    color: #201E1F;
+}
+
+
+#cities-container{
+    width: 900px;
+
+}
+
+
+.city{
+    width: 250px;
+    height: 300px;
+    background-color: #DADAD9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #201E1F;
+}
