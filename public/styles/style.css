@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    margin: 0;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+#heading-container{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#presentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    margin: 0;
+    font-size: 32px;
+    color: #201E1F;
+}
+
+#logo{
+    margin-left: 40px;
+    width: 90px;
+    height: 90px;
+    background-image:url("https://firebasestorage.googleapis.com/v0/b/portfolio-5f3ff.appspot.com/o/assets%2Fcloudy.svg?alt=media&token=00c8497b-2440-4b26-8a52-4d2758695460");
+}
+
+#search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-container{
+    width: 380px;
+    height: 40px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+#search-input{
+   width: 250px;
+   height: 90%;
+   margin-right: 18px;
+   background-color: transparent;
+   font-family: 'Otomanopee One', sans-serif;
+   border: none;
+}
+
+#search-btt{
+    cursor: pointer;
+}
+
+#search-image{
+    width: 16px;
+    height: 16px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-5f3ff.appspot.com/o/assets%2Fsearch.svg?alt=media&token=7836ede4-bb65-4a90-ba2b-31f9fe87118e');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+input:focus{
+    outline: none;
+}
+
+#my-cities{
+    margin: auto 0;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#cities-container{
+   width: 900px;
+   margin: auto;
+   margin-top: 40px;
+   min-height: 100px;
+   max-height: 500px;
+   overflow-x: scroll;
+}
+
+.city{
+    width: 22%;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 32px;
+}
+
+.city-container{
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-5f3ff.appspot.com/o/assets%2Fcloud.svg?alt=media&token=a0add58f-88d1-46f5-b85e-a02218c04104');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.city-name{
+    margin: 0px;
+}
+
+.city-temperature{
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.last-update{
+    margin: 0px;
+    margin-top: 16px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.delete-btt{
+    margin: 0 auto;
+    margin-top: 14px;
+    width: 100px;
+    height: 32px;
+    border: none;
+    border-radius: 32px;
+    background-color: #ED254E;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.add-btt{
+    margin: 0 auto;
+    margin-top: 14px;
+    width: 100px;
+    height: 32px;
+    border: none;
+    border-radius: 32px;
+    background-color: #00B4D8;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Otomanopee One', sans-serif;
+}

@@ -4,37 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/portfolio-5f3ff.appspot.com/o/assets%2Fcloudy.svg?alt=media&token=00c8497b-2440-4b26-8a52-4d2758695460">
     <title>Weather App</title>
 </head>
 <body>
 
     <div id="container">
-        <h1 id="title">Weather App</h1>
 
-        <div id="search-bar">
-            <input id="search-input" type="text" placeholder="Look for a city">
-            <button id="search-btt">Search</button>
-        </div>
-
-
-
-        <h2 id="favorite-cities">Favorite Cities</h2>
-
-        <div id="cities-container">
-            <div class="city">
-                <div class="weather-image"></div>
-                <h4 class="city-name">Madrid</h4>
-                <h5 class="city-temperature">56º C</h5>
-                <button class="add-btt">Add</button>
-                <h6 class="last-update">Last Update: June 6 13:12</h6>
-                <!-- <button class="delete-btt">Delete</button> -->
+        <div id="heading-container">
+            <div id="presentation">
+                <h1 id="title">Weather App</h1>
+                <img id="logo" alt="Logo" src="https://firebasestorage.googleapis.com/v0/b/portfolio-5f3ff.appspot.com/o/assets%2Fcloudy.svg?alt=media&token=00c8497b-2440-4b26-8a52-4d2758695460">
+            </div>
+            
+            <div id="search-bar">
+                <div id="search-container">
+                    <input id="search-input" type="text" placeholder="Look for a city">
+                    <p id="search-btt">Search</p>
+                </div>
             </div>
         </div>
+
+        <h2 id="my-cities">My Cities</h2>
+        
+        <div id="cities-container">
+            <div class="city">
+                <div class="city-container">
+                    <div class="weather-container">
+                        <div class="weather-image"></div>
+                        <div class="weather-info">
+                            <h4 class="city-name">Madrid</h4>
+                            <h5 class="city-temperature">56º C</h5>
+                        </div>
+                    </div>
+                    <h6 class="last-update">Last Update: June 6 13:12</h6>
+                    <button class="delete-btt">Delete</button>
+                </div>
+            </div>
+            <div class="city">
+                <div class="city-container">
+                    <div class="weather-container">
+                        <div class="weather-image"></div>
+                        <div class="weather-info">
+                            <h4 class="city-name">Madrid</h4>
+                            <h5 class="city-temperature">56º C</h5>
+                        </div>
+                    </div>
+                    <h6 class="last-update">Last Update: June 6 13:12</h6>
+                    <button class="add-btt">Add</button>
+                </div>
+            </div>
+         
+        </div>
     </div>
-    
-    
 </body>
 
-<script src="./main.js"></script>
+<script src="./scripts/main.js"></script>
 </html>
