@@ -3,11 +3,16 @@ const request = require('request');
 const router = express.Router();
 const City = require('../models/City');
 
+
+
 router.get("/cities/:cityName", (req, res) => {
     let cityName = req.params.cityName;
     request(`http://api.weatherstack.com/current?access_key=4bd20a8118ac3089bc546d81428013a1&query=${cityName}`, (err, response, body) => {
         let reqBody = JSON.parse(body)
-        // console.log(reqBody)
+        if(!body){
+            return res.send(null);
+        }
+        
         let cityWeather = {
         name: reqBody.location.name,
         temperature: reqBody.current.temperature,
