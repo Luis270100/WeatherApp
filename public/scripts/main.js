@@ -31,3 +31,8 @@ const getCities = async () => {
     console.log(citiesInfo);
     renderer.renderCitiesInDb(citiesInfo);
 };
+
+$('#cities-container').on("click", ".btt", async (event) => {
+    await weatherManager.removeCity(event.target.value);
+    getCities();
+});
