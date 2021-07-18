@@ -86,6 +86,7 @@ input:focus{
     text-align: center;
     margin: auto;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 #cities-container{
