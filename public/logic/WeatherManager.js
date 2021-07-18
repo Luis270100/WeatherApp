@@ -6,7 +6,8 @@ class WeatherManager{
     }
 
     async saveCityName(cityName) {
-        $.post('/city', cityName, () => {
+        let data = {name : cityName}
+        $.post('/city', data, () => {
             console.log(`${cityName} is saved.`);
         });
     }
