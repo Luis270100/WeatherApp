@@ -1,6 +1,12 @@
 const weatherManager = new WeatherManager();
 const renderer = new Renderer();
 
+
+$(document).ready(async () => {
+    getCities();
+});
+
+
 const searchCity = async () => {
     let searchInput = $('#search-input').val();
     if (!/\S/.test(searchInput)) {
@@ -15,7 +21,13 @@ const searchCity = async () => {
 };
 
 
-
-
-
-
+const getCities = async () => {
+    let cities = await weatherManager.getCities();
+    let citiesInfo = [];
+    for(const city of cities){
+        let cityInfo = await weatherManager.getCityByName(city.name);
+        citiesInfo.push(cityInfo);
+    };
+    console.log(citiesInfo);
+    renderer.renderCitiesInDb(citiesInfo);
+};

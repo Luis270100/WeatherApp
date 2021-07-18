@@ -13,7 +13,7 @@ router.get("/city/:cityName", (req, res) => {
             console.log(body.error);
             return res.send(null);
         };
-        
+
         let cityWeather = {
         name: reqBody.location.name,
         temperature: reqBody.current.temperature,
@@ -27,7 +27,7 @@ router.get("/city/:cityName", (req, res) => {
 
 router.get('/cities', (req, res) => {
     City.find({}).exec((err, city) => {
-      res.send(city)
+      res.send(city);
     })
 });
 
