@@ -11,7 +11,7 @@ app.use(express.static(path.join(`${__dirname}/public`)));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost/TortugaPedasi', { useUnifiedTopology: true , useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/weatherApp', { useUnifiedTopology: true , useNewUrlParser: true, useFindAndModify: false });
 
 
 app.use("/", api);

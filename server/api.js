@@ -31,5 +31,25 @@ router.get('/cities', (req, res) => {
 });
 
 
+router.post('/city', (req, res) => {
+    let city = new City(req.body);
+    city.save()
+    .then(doc => {
+        console.log(`City save on the DB ${doc}`);
+        res.send(true);
+    });
+});
+
+
+router.delete('/city/:cityName', (req, res) => {
+    let cityName = req.params.cityName
+    City.findOneAndRemove({
+      name: cityName
+    })
+    .then(() => {
+        res.send(true);
+    });
+});
+
 
 module.exports = router;
