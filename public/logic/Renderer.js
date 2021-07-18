@@ -4,12 +4,13 @@ class Renderer {
         const source = $('#search-city-template').html();
         const template = Handlebars.compile(source);
         let newHTML = template({cityData})
-        $('#cities-container').append(newHTML)
+        $('#cities-container').empty();
+        $('#cities-container').append(newHTML);
     }
 
 
     renderCitiesInDb() {
-
+        
     }
 
 

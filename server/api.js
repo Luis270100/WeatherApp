@@ -5,13 +5,14 @@ const City = require('../models/City');
 
 
 
-router.get("/cities/:cityName", (req, res) => {
+router.get("/city/:cityName", (req, res) => {
     let cityName = req.params.cityName;
     request(`http://api.weatherstack.com/current?access_key=4bd20a8118ac3089bc546d81428013a1&query=${cityName}`, (err, response, body) => {
-        let reqBody = JSON.parse(body)
-        if(!body){
+        let reqBody = JSON.parse(body);
+        if(reqBody.error){
+            console.log(body.error);
             return res.send(null);
-        }
+        };
         
         let cityWeather = {
         name: reqBody.location.name,
