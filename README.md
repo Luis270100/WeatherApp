@@ -1,3 +1,6 @@
+
+
+
 # WeatherApp
 
 
@@ -11,3 +14,7 @@ To develop this application on the frontend we use HTML / CSS / JS and for the b
 
 
 ![Alt Text](https://media.giphy.com/media/QRhtqYeEywJI4/giphy.gif)
+
+
+
+https://user-images.githubusercontent.com/53636322/126087547-ac534759-7b90-4581-8009-a9e4efcd29a7.mp4
