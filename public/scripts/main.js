@@ -14,7 +14,7 @@ const searchCity = async () => {
     };
     let city = await weatherManager.getCityByName(searchInput);
     if(!city){
-        return alert("Hubo un error intentalo de nuevo.")
+        return alert("There was an error, please try again.")
     };
     renderer.renderCitySearch([city]);
 };
